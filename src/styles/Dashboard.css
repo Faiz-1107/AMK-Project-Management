@@ -1,0 +1,11 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f6fa;
+}
+
+.dashboard-main{
+  position: relative; 
+  width: 100%;
+}

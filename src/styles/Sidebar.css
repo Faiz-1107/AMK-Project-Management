@@ -1,0 +1,47 @@
+.sidebar {
+    width: 240px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.sidebar .role {
+    background: #f2f2f2;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    bottom: 240px;
+}
+
+.sidebar li {
+    margin: 15px 0;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+}
+
+.signout-btn {
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+}

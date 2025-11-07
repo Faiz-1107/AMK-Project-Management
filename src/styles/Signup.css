@@ -1,0 +1,158 @@
+/* Name */
+.name{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* ====== General Container ====== */
+.signup-container {
+  background-color: #f7f8fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+/* ====== Card Box ====== */
+.signup-box {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
+  width: 350px;
+  text-align: left;
+}
+
+/* ====== Headings ====== */
+.signup-title {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.signup-subtitle {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* ====== Form Fields ====== */
+.signup-label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.signup-input {
+  margin-bottom: 10px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #d2d6dc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  outline: none;
+  border-color: #000;
+}
+
+/* ====== Consent & Button ====== */
+.signup-consent {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.signup-consent a {
+  color: #000;
+  text-decoration: none;
+  margin-left: 3px;
+  margin-top: 15px;
+}
+
+.signup-consent a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Button ====== */
+.signup-button {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.signup-button:hover {
+  opacity: 0.85;
+}
+
+/* ====== Footer Text ====== */
+.signup-footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.signup-footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}
+
+.signup-footer-text {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: #666;
+  text-align: center;
+}
+
+/* ====== Error Messages ====== */
+.signup-form .error-message {
+  color: #dc3545;
+  font-size: 0.75rem;
+  margin-top: -0.75rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.signup-form input.error,
+.signup-form select.error {
+  border-color: #dc3545;
+}
+
+.signup-form input.error:focus,
+.signup-form select.error:focus {
+  border-color: #dc3545;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.1);
+}

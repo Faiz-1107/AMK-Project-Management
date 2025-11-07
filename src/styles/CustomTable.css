@@ -1,0 +1,123 @@
+
+/* ====== Users Table Styles (clean, rounded, subtle borders) ====== */
+.users-table-container {
+  margin-top: 24px;
+}
+
+.users-table-container h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 12px 0;
+}
+
+/* Wrapper to allow horizontal scroll on narrow screens */
+.users-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border: 1px solid #e5e7eb; 
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  text-align: left;
+}
+
+/* ====== Header ====== */
+.users-table thead th {
+  background: #fafafa;
+  color: #111827; 
+  font-weight: 600;
+  font-size: 14px;
+  padding: 14px 18px; 
+  white-space: nowrap;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: middle; 
+}
+
+.users-table thead th:first-child {
+  border-top-left-radius: 10px;
+}
+.users-table thead th:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* ====== Body ====== */
+.users-table tbody td {
+  padding: 14px 18px;
+  font-size: 14px;
+  color: #374151; 
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle; 
+}
+
+.users-table tbody tr:hover td {
+  background: #f9fafb; 
+}
+
+.users-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ====== Actions ====== */
+.edit-btn,
+.delete-btn {
+  display: inline-flex;
+  align-items: center; 
+  gap: 6px;
+  border: 1px solid transparent;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+
+.edit-btn {
+  background: #eff6ff; 
+  color: #1d4ed8; 
+  border-color: #bfdbfe;
+}
+.edit-btn:hover {
+  background: #dbeafe;
+}
+
+.delete-btn {
+  background: #fef2f2; 
+  color: #b91c1c; 
+  border-color: #fecaca; 
+}
+.delete-btn:hover {
+  background: #fee2e2; 
+}
+
+/* ====== Current User Indicator ====== */
+.self-indicator {
+  color: #6b7280;
+  font-style: italic;
+  font-size: 13px;
+  margin-left: 8px;
+}
+
+/* ====== Disabled Delete Button ====== */
+.disabled-delete-btn {
+  background: #f3f4f6; 
+  color: #9ca3af; 
+  border-color: #d1d5db; 
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ====== Compact mode for very small screens ====== */
+@media (max-width: 640px) {
+  .users-table thead th,
+  .users-table tbody td {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
